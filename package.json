@@ -1,5 +1,6 @@
 {
   "name": "job-challenge",
+  "author": "Andrea Ercolino | mondotondo.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
