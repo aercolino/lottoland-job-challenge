@@ -1,14 +1,29 @@
 <template>
   <div>
+    <ae-title :date="apiDate"></ae-title>
+    <ae-draw
+      :numbers="apiNumbers"
+      :euro-numbers="apiEuroNumbers"
+    ></ae-draw>
+    <ae-odds :ranks="apiOdds"></ae-odds>
   </div>
 </template>
 
 <script>
 import responseData from '../../dev-documents/sample-response.json'
+import AeTitle from './AeTitle.vue'
+import AeDraw from './AeDraw.vue'
+import AeOdds from './AeOdds.vue'
+
 const lastDraw = responseData.last;
 
 export default {
   name: "AeResults",
+  components: {
+    AeTitle,
+    AeDraw,
+    AeOdds,
+  },
   data() {
     return {
       apiDate: lastDraw.date,
