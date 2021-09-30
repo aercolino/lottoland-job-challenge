@@ -1,0 +1,121 @@
+{
+  "last": {
+    "nr": 497,
+    "currency": "EUR",
+    "date": {
+      "full": "Die Lottozahlen vom Freitag, den 24.09.2021",
+      "day": 24,
+      "month": 9,
+      "year": 2021,
+      "hour": 21,
+      "minute": 0,
+      "dayOfWeek": "Freitag"
+    },
+    "closingDate": "24.09.2021, 19:00",
+    "lateClosingDate": "24.09.2021, 20:10",
+    "drawingDate": "24.09.2021, 21:00",
+    "numbers": [
+      12,
+      22,
+      35,
+      38,
+      49
+    ],
+    "euroNumbers": [
+      5,
+      10
+    ],
+    "jackpot": "21",
+    "marketingJackpot": "21",
+    "specialMarketingJackpot": "21",
+    "climbedSince": 31,
+    "Winners": 838343,
+    "odds": {
+      "rank0": {
+        "winners": 0,
+        "specialPrize": 0,
+        "prize": 0
+      },
+      "rank1": {
+        "winners": 1,
+        "specialPrize": 0,
+        "prize": 2217010080
+      },
+      "rank2": {
+        "winners": 4,
+        "specialPrize": 0,
+        "prize": 49236550
+      },
+      "rank3": {
+        "winners": 11,
+        "specialPrize": 0,
+        "prize": 6319120
+      },
+      "rank8": {
+        "winners": 30236,
+        "specialPrize": 0,
+        "prize": 2370
+      },
+      "rank9": {
+        "winners": 38538,
+        "specialPrize": 0,
+        "prize": 1800
+      },
+      "rank10": {
+        "winners": 77147,
+        "specialPrize": 0,
+        "prize": 1290
+      },
+      "rank4": {
+        "winners": 52,
+        "specialPrize": 0,
+        "prize": 445570
+      },
+      "rank5": {
+        "winners": 956,
+        "specialPrize": 0,
+        "prize": 21810
+      },
+      "rank6": {
+        "winners": 1885,
+        "specialPrize": 0,
+        "prize": 8600
+      },
+      "rank11": {
+        "winners": 157413,
+        "specialPrize": 0,
+        "prize": 1140
+      },
+      "rank7": {
+        "winners": 2181,
+        "specialPrize": 0,
+        "prize": 6370
+      },
+      "rank12": {
+        "winners": 529919,
+        "specialPrize": 0,
+        "prize": 830
+      }
+    }
+  },
+  "next": {
+    "nr": 498,
+    "currency": "EUR",
+    "date": {
+      "full": "Die Lottozahlen vom Freitag, den 01.10.2021",
+      "day": 1,
+      "month": 10,
+      "year": 2021,
+      "hour": 21,
+      "minute": 0,
+      "dayOfWeek": "Freitag"
+    },
+    "closingDate": "01.10.2021, 19:00",
+    "lateClosingDate": "01.10.2021, 20:10",
+    "drawingDate": "01.10.2021, 21:00",
+    "jackpot": "10",
+    "marketingJackpot": "10",
+    "specialMarketingJackpot": "10",
+    "climbedSince": 31
+  }
+}
