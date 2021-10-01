@@ -20,8 +20,14 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'FF Daxline Pro';
+  src: url('assets/DaxlinePro-Regular_13131.ttf');
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'FF Daxline Pro', Geneva, 'Trebuchet MS', Tahoma, Verdana, sans-serif;
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
