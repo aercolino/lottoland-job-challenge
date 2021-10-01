@@ -22,7 +22,8 @@ export default {
 <style>
 @font-face {
   font-family: 'FF Daxline Pro';
-  src: url('assets/DaxlinePro-Regular_13131.ttf');
+  src: url('assets/normal-f6f025a08fc3ca87.woff2'),
+       url('assets/normal-e08aa66c8eb034ec.woff2');
 }
 
 #app {
