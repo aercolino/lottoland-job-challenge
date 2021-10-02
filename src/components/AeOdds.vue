@@ -20,7 +20,7 @@
           {{ romanNumbers[key] }}
         </td>
         <td>
-          Match
+          {{ combinations[key] }}
         </td>
         <td>
           {{ rank.winners }}
@@ -67,8 +67,11 @@ export default {
     },
     romanNumbers() {
       return Object.keys(tiersToMatches);
+    },
+    combinations() {
+      return Object.values(tiersToMatches).map(([numbers, euroNumbers]) => `${numbers} Numbers + ${euroNumbers} Euronumbers`);
     }
-  }
+  },
 };
 </script>
 
