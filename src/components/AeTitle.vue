@@ -12,7 +12,7 @@ export default {
   props: ["date"],
   computed: {
     myDate() {
-      // assume this.date is local, in particular this seems to be the date in Germany
+      // I installed "luxon" to get the germanDate right (taking into account DST)
       const germanParts = {
         year: this.date.year,
         month: this.date.month,
