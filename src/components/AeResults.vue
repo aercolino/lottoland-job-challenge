@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import responseData from '../../dev-documents/sample-response.json';
-import AeTitle from './AeTitle.vue';
-import AeDraw from './AeDraw.vue';
-import AeOdds from './AeOdds.vue';
+import responseData from "../../dev-documents/sample-response.json";
+import AeTitle from "./AeTitle.vue";
+import AeDraw from "./AeDraw.vue";
+import AeOdds from "./AeOdds.vue";
 
 const lastDraw = responseData.last;
 
@@ -38,5 +38,7 @@ export default {
 <style scoped>
 #results {
   text-align: left;
+  width: 960px;
+  margin: 0 auto;
 }
 </style>
