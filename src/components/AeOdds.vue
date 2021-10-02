@@ -15,12 +15,12 @@
           Amount
         </th>
       </tr>
-      <tr v-for="(rank, key) in myRanks" :key="key">
+      <tr v-for="rank in myRanks" :key="rank.position">
         <td>
-          {{ romanNumbers[key] }}
+          {{ romanNumbers[rank.position] }}
         </td>
         <td>
-          {{ combinations[key] }}
+          {{ combinations[rank.position] }}
         </td>
         <td>
           {{ rank.winners }}
@@ -57,12 +57,16 @@ export default {
   computed: {
     myRanks() {
       const entries = Object.entries(this.ranks);
-      const sorted = entries.slice().sort(([key1], [key2]) => {
-        const order1 = parseInt(key1.replace('rank', ''), 10);
-        const order2 = parseInt(key2.replace('rank', ''), 10);
-        return order1 - order2;
-      });
-      const result = sorted.map(([, rank]) => rank);
+      const sorted = entries.slice()
+        .map(([key, rank]) => ({
+          position: parseInt(key.replace('rank', ''), 10),
+          ...rank,
+        }))
+        .sort(({position: position1}, {position: position2}) => {
+          return position1 - position2;
+        });
+      // TODO verify that the guess to filter lines with no prize is right
+      const result = sorted.filter(({prize}) => prize > 0);
       return result;
     },
     romanNumbers() {
