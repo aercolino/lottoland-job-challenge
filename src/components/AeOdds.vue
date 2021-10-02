@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>ranks: {{ ranks }}</p>
     <table width="100%">
       <tr>
         <th width="10%">
@@ -16,18 +15,18 @@
           Amount
         </th>
       </tr>
-      <tr>
+      <tr v-for="(rank, key) in ranks" :key="key">
         <td>
-          Tier
+          {{ key }}
         </td>
         <td>
           Match
         </td>
         <td>
-          Winners
+          {{ rank.winners }}
         </td>
         <td>
-          Amount
+          {{ rank.prize }}
         </td>
       </tr>
     </table>
@@ -42,4 +41,13 @@ export default {
 </script>
 
 <style scoped>
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 </style>
