@@ -17,7 +17,7 @@
       </tr>
       <tr v-for="(rank, key) in myRanks" :key="key">
         <td>
-          {{ key }}
+          {{ romanNumbers[key] }}
         </td>
         <td>
           Match
@@ -34,6 +34,23 @@
 </template>
 
 <script>
+const tiersToMatches = {
+ '': [], // FIXME what is rank0 used for?
+ 'I': [5, 2],
+ 'II': [5, 1],
+ 'III': [5, 0],
+ 'IV': [4, 2],
+ 'V': [4, 1],
+ 'VI': [4, 0],
+ 'VII': [3, 2],
+ 'VIII': [2, 2],
+ 'IX': [3, 1],
+ 'X': [3, 0],
+ 'XI': [1, 2],
+ 'XII': [2, 1],
+};
+
+
 export default {
   name: "AeOdds",
   props: ["ranks"],
@@ -48,6 +65,9 @@ export default {
       const result = sorted.map(([, rank]) => rank);
       return result;
     },
+    romanNumbers() {
+      return Object.keys(tiersToMatches);
+    }
   }
 };
 </script>
