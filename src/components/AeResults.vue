@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="results">
     <ae-title :date="apiDate"></ae-title>
     <ae-draw
       :numbers="apiNumbers"
@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import responseData from '../../dev-documents/sample-response.json'
-import AeTitle from './AeTitle.vue'
-import AeDraw from './AeDraw.vue'
-import AeOdds from './AeOdds.vue'
+import responseData from '../../dev-documents/sample-response.json';
+import AeTitle from './AeTitle.vue';
+import AeDraw from './AeDraw.vue';
+import AeOdds from './AeOdds.vue';
 
 const lastDraw = responseData.last;
 
@@ -36,4 +36,7 @@ export default {
 </script>
 
 <style scoped>
+#results {
+  text-align: left;
+}
 </style>
