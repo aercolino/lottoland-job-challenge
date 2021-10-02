@@ -119,6 +119,10 @@ Anyway, here is the incomplete code I wrote. I was going to use `isEST` to creat
 ```
 
 
+### Balls
+
+I searched _lottery balls_ on Google and found this implementation which I liked: https://codepen.io/jimmie/pen/bgQWgQ. I then simplified it to this: https://codepen.io/aercolino/pen/GRELjRR.
+
 
 ## Project setup
 ```
