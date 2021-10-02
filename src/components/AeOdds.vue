@@ -15,7 +15,7 @@
           Amount
         </th>
       </tr>
-      <tr v-for="(rank, key) in ranks" :key="key">
+      <tr v-for="(rank, key) in myRanks" :key="key">
         <td>
           {{ key }}
         </td>
@@ -37,6 +37,18 @@
 export default {
   name: "AeOdds",
   props: ["ranks"],
+  computed: {
+    myRanks() {
+      const entries = Object.entries(this.ranks);
+      const sorted = entries.slice().sort(([key1], [key2]) => {
+        const order1 = parseInt(key1.replace('rank', ''), 10);
+        const order2 = parseInt(key2.replace('rank', ''), 10);
+        return order1 - order2;
+      });
+      const result = sorted.map(([, rank]) => rank);
+      return result;
+    },
+  }
 };
 </script>
 
