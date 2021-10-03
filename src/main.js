@@ -13,6 +13,8 @@ Vue.config.productionTip = false
 // rate is the one which was current when the balls rolled.
 // In both cases it's not the rate which is current when 
 // the page is displayed.
+
+// Assume the currency of the JSON response is always EUR
 Vue.prototype.$oneEuroTo = {
   'EUR': 1,
   'SEK': 10.14,
