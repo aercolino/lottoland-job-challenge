@@ -44,7 +44,7 @@ export default {
   width: 30px;
   height: 30px;
   display: inline-block;
-  margin: 5px;
+  margin: 5px 5px 5px 0;
 }
 
 .stage.plus {
@@ -52,7 +52,7 @@ export default {
   font-size: 20px;
   position: relative;
   top: -10px;
-  margin-left: 9px;
+  margin-left: 5px;
 }
 
 .ball {
