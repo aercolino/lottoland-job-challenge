@@ -36,6 +36,9 @@ export default {
   mounted() {
     let lastDraw;
     this.$axios
+      // FIXME Both these URLs get blocked by CORS policy:
+      // No 'Access-Control-Allow-Origin' header is present on the requested resources
+      // .get("https://media.lottoland.com/api/drawings/euroJackpot")
       .get("https://www.lottoland.com/api/drawings/euroJackpot")
       .then((response) => {
         lastDraw = response.data?.last || {};
