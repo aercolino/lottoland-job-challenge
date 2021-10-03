@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="draw">
     <section
       v-for="(ball, index) in numbers"
       :key="`${index}-${ball}`"
@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style scoped>
+#draw {
+  font-size: 14px;
+}
+
 .stage {
   width: 30px;
   height: 30px;
@@ -71,8 +75,6 @@ export default {
   width: 100%;
   text-align: center;
   line-height: 30px;
-  font-size: 16px;
-  color: blue;
   animation: ballRoll 2s ease-out;
 }
 
@@ -81,6 +83,7 @@ export default {
   position: absolute;
   transform: translateX(-64%);
   opacity: 0;
+  font-weight: bold;
   animation: numberReveal 0.1s 1.5s reverse forwards;
 }
 
@@ -166,7 +169,7 @@ export default {
 
 .stage:nth-child(7) .number:after,
 .stage:nth-child(7) .number:before {
-  animation-delay: 3.0s;
+  animation-delay: 3s;
 }
 
 .stage:nth-child(8) .ball,
