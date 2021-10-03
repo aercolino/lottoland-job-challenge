@@ -29,7 +29,7 @@ After some research on the subject, I came to the conclusion that it's tricky to
 So, for the time being, I'm gonna stick with the default definition in the Vue project generator, knowing that that is not solved.
 
 
-### I18N and L10N
+### Localization of draw time
 
 I studied the EuroJackpot results pages across all the locales, the JSON API sample response, the preferred locale of the user, the resulting `Intl.DateTimeFormat`, `Intl.NumberFormat` when applied to the response data, and have come to these conclusions:
 
@@ -122,6 +122,16 @@ Anyway, here is the incomplete code I wrote. I was going to use `isEST` to creat
 ### Balls
 
 I searched _lottery balls_ on Google and found this implementation which I liked: https://codepen.io/jimmie/pen/bgQWgQ. I then simplified it to this: https://codepen.io/aercolino/pen/GRELjRR.
+
+
+### Translation of Match / Numbers, Euronumbers
+
+Note that there is an error in the [_en_ page](https://www.lottoland.com/en/eurojackpot/results-winning-numbers/24-09-2021): _X_ is right but _VI_ is wrong
+
+|Tier|Match|Winners|Amount|
+|---|---|---|---|
+|VI|4 Numbers + 0 Euronumber|1,885x|€86.00|
+|X|3 Numbers + 0 Euronumbers|77,147x|€12.90|
 
 
 ## Project setup
