@@ -1,5 +1,5 @@
 <template>
-  <div id="draw">
+  <div id="draw" v-if="numbers">
     <section
       v-for="(ball, index) in numbers"
       :key="`${index}-${ball}`"

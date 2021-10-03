@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="date">
     <span class="logotype">EuroJackpot</span> | {{ myDate }}
   </div>
 </template>

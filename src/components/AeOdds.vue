@@ -1,5 +1,5 @@
 <template>
-  <div id="odds">
+  <div id="odds" v-if="ranks">
     <table width="100%">
       <tr>
         <th width="10%">
