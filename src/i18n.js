@@ -30,5 +30,30 @@ const config = {
 const virgin = new VueI18n(config);
 patchLocaleMessages(config, virgin);
 
+
+config.numberFormats = {
+  'en': {
+    currency: {
+      style: 'currency',
+      currency: 'EUR',
+      currencyDisplay: 'symbol',
+    }
+  },
+  'de': {
+    currency: {
+      style: 'currency',
+      currency: 'EUR',
+      currencyDisplay: 'symbol',
+    }
+  },
+  'sv-SE': {
+    currency: {
+      style: 'currency',
+      currency: 'SEK',
+      currencyDisplay: 'symbol'
+    }
+  }
+}
+
 const patched = new VueI18n(config); 
 export default patched;

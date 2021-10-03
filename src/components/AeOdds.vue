@@ -26,7 +26,7 @@
           {{ rank.winners }}
         </td>
         <td>
-          {{ rank.prize }}
+          {{ prize(rank) }}
         </td>
       </tr>
     </table>
@@ -75,8 +75,15 @@ export default {
     combinations() {
       return Object.values(tiersToMatches)
         .map(([numbers, euroNumbers]) => this.$t('X Numbers + Y Euronumbers', { X: numbers, Y: euroNumbers }));
-    }
+    },
   },
+  methods: {
+    prize(rank) {
+      const currency = this.$t('currency');
+      const rate = this.$oneEuroTo[currency] || 0;
+      return this.$n(rank.prize / 100 * rate, 'currency');
+    }
+  }
 };
 </script>
 
