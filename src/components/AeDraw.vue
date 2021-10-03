@@ -158,4 +158,24 @@ export default {
 .stage:nth-child(5) .number:before {
   animation-delay: 2.7s;
 }
+
+.stage:nth-child(7) .ball,
+.stage:nth-child(7) .number {
+  animation-delay: 1.5s;
+}
+
+.stage:nth-child(7) .number:after,
+.stage:nth-child(7) .number:before {
+  animation-delay: 3.0s;
+}
+
+.stage:nth-child(8) .ball,
+.stage:nth-child(8) .number {
+  animation-delay: 1.8s;
+}
+
+.stage:nth-child(8) .number:after,
+.stage:nth-child(8) .number:before {
+  animation-delay: 3.3s;
+}
 </style>
