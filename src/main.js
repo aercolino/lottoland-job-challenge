@@ -1,6 +1,7 @@
-import Vue from 'vue'
-import App from './App.vue'
-import i18n from './i18n'
+import Vue from 'vue';
+import App from './App.vue';
+import i18n from './i18n';
+import axios from 'axios';
 
 Vue.config.productionTip = false
 
@@ -19,6 +20,8 @@ Vue.prototype.$oneEuroTo = {
   'EUR': 1,
   'SEK': 10.14,
 };
+
+Vue.prototype.$axios = axios.create();
 
 new Vue({
   i18n,
