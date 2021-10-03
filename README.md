@@ -156,6 +156,13 @@ I installed Axios to download the JSON API response, but clashed against CORS pr
 No tests for now. I use to write test afterwards, but this is just a job challenge, I'm not going to add them.
 
 
+### The End
+
+Enjoy reviewing my code.
+
+And, please, don't forget to browse my blog https://mondotondo.com, where I published around 400 technical articles, for more than 15 years.
+
+
 ---
 
 
