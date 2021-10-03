@@ -3,16 +3,16 @@
     <table width="100%">
       <tr>
         <th width="10%">
-          Tier
+          {{ $t('Tier') }}
         </th>
         <th width="30%">
-          Match
+          {{ $t('Match') }}
         </th>
         <th width="30%">
-          Winners
+          {{ $t('Winners') }}
         </th>
         <th width="30%">
-          Amount
+          {{ $t('Amount') }}
         </th>
       </tr>
       <tr v-for="rank in myRanks" :key="rank.position">

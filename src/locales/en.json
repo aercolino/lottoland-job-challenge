@@ -1,6 +1,8 @@
 {
-  "match": {
-    "Numbers": "{n} Numbers | 1 Number | {n} Numbers",
-    "Euronumbers": "{n} Euronumbers | 1 Euronumber | {n} Euronumbers"
-  }
+  "Tier": "Tier",
+  "Match": "Match",
+  "Winners": "Winners",
+  "Amount": "Amount",
+  "Numbers": "{n} Numbers | 1 Number | {n} Numbers",
+  "Euronumbers": "{n} Euronumbers | 1 Euronumber | {n} Euronumbers"
 }

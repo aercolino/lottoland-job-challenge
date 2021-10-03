@@ -1,6 +1,7 @@
 {
-  "match": {
-    "Numbers": "rätt",
-    "Euronumbers": "rätt"
-  }
+  "Tier": "Nivå",
+  "Match": "Antal rätt",
+  "Winners": "Vinnare",
+  "Amount": "Utdelning",
+  "Numbers": "rätt"
 }
