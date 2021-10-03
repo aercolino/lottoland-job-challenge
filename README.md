@@ -87,7 +87,8 @@ I studied the EuroJackpot results pages across all the locales, the JSON API sam
 6. for group 3 locales (`hu-HU, pt-BR, es, es-MX, sv-SE, ja, sk, pl`), the displayed date has a custom format, also dependent from the locale
 7. for `en-AU`, the intended page is not found
 
----
+
+#### Luxon
 
 I thought I'd use the same as group 1 with a pure JS solution, but after some troubles at getting the right local date based on the provided german date, I decided to use the _Luxon_ library.
 
@@ -126,6 +127,18 @@ I searched _lottery balls_ on Google and found this implementation which I liked
 
 ### Translation of Match / Numbers, Euronumbers
 
+I've limited implemented locales to "en", "de", and "sv-SE". You can easily test different alternatives from here
+
+./src/App.vue
+
+```js
+  mounted() {
+    // this.$i18n.locale = 'de';
+    // this.$i18n.locale = 'sv-SE';
+  }
+```
+
+
 Note that there is an error in the [_en_ page](https://www.lottoland.com/en/eurojackpot/results-winning-numbers/24-09-2021): _X_ is right but _VI_ is wrong
 
 |Tier|Match|Winners|Amount|
@@ -133,26 +146,33 @@ Note that there is an error in the [_en_ page](https://www.lottoland.com/en/euro
 |VI|4 Numbers + 0 Euronumber|1,885x|€86.00|
 |X|3 Numbers + 0 Euronumbers|77,147x|€12.90|
 
+---
+
 
 ## Project setup
-```
+
+```sh
 npm install
 ```
 
 ### Compiles and hot-reloads for development
-```
+
+```sh
 npm run serve
 ```
 
 ### Compiles and minifies for production
-```
+
+```sh
 npm run build
 ```
 
 ### Lints and fixes files
-```
+
+```sh
 npm run lint
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
