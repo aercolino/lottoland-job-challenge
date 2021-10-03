@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="odds">
     <table width="100%">
       <tr>
         <th width="10%">
@@ -81,6 +81,10 @@ export default {
 </script>
 
 <style scoped>
+#odds {
+  font-size: 14px;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -88,6 +92,6 @@ table {
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 14px 21px;
 }
 </style>
