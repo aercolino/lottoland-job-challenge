@@ -17,7 +17,8 @@ export default {
     AeResults
   },
   mounted() {
-    this.$i18n.locale = 'en';
+    // this.$i18n.locale = 'de';
+    // this.$i18n.locale = 'sv-SE';
   }
 }
 </script>
