@@ -15,6 +15,9 @@ export default {
   components: {
     // HelloWorld
     AeResults
+  },
+  mounted() {
+    this.$i18n.locale = 'en';
   }
 }
 </script>
