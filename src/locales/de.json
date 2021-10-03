@@ -1,6 +1,4 @@
 {
-  "message": "hello i18n !!",
-  "X Numbers + Y Euronumbers": "{X} Zahlen + {Y} Eurozahlen",
   "match": {
     "Numbers": "{n} Zahlen | 1 Zahl | {n} Zahlen",
     "Euronumbers": "{n} Eurozahlen | 1 Eurozahl | {n} Eurozahlen"
