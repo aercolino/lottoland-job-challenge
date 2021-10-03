@@ -1,6 +1,6 @@
 <template>
   <div id="results">
-    <ae-title :date="apiDate"></ae-title>
+    <ae-title class="title" :date="apiDate"></ae-title>
     <ae-draw
       :numbers="apiNumbers"
       :euro-numbers="apiEuroNumbers"
@@ -40,5 +40,9 @@ export default {
   text-align: left;
   width: 960px;
   margin: 0 auto;
+}
+
+.title {
+  margin: 20px 0;
 }
 </style>
