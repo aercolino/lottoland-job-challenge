@@ -5,5 +5,6 @@
   "Winners": "Gewinner",
   "Amount": "Quoten",
   "Numbers": "{n} Zahlen | 1 Zahl | {n} Zahlen",
-  "Euronumbers": "{n} Eurozahlen | 1 Eurozahl | {n} Eurozahlen"
+  "Euronumbers": "{n} Eurozahlen | 1 Eurozahl | {n} Eurozahlen",
+  "WinnersCount": "{count}x"
 }

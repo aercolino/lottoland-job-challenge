@@ -23,7 +23,7 @@
           {{ combinations[rank.position] }}
         </td>
         <td>
-          {{ rank.winners }}
+          {{ winners(rank) }}
         </td>
         <td>
           {{ prize(rank) }}
@@ -78,10 +78,13 @@ export default {
     },
   },
   methods: {
-    prize(rank) {
+    winners({winners}) {
+      return this.$t('WinnersCount', {count: this.$n(winners)});
+    },
+    prize({prize}) {
       const currency = this.$t('currency');
       const rate = this.$oneEuroTo[currency] || 0;
-      return this.$n(rank.prize / 100 * rate, 'currency');
+      return this.$n(prize / 100 * rate, 'currency');
     }
   }
 };

@@ -4,5 +4,6 @@
   "Match": "Antal rätt",
   "Winners": "Vinnare",
   "Amount": "Utdelning",
-  "Numbers": "rätt"
+  "Numbers": "rätt",
+  "WinnersCount": "{count} st"
 }
