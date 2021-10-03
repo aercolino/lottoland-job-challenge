@@ -13,32 +13,22 @@ function loadLocaleMessages() {
   return messages
 }
 
+function patchLocaleMessages(config, i18n) {
+  const patches = require.context('./locales/patches', false, /\.js$/i);
+  patches.keys().forEach(key => {
+    patches(key).default(config, i18n);
+  });
+}
+
+
 const config = {
   locale: process.env.VUE_APP_I18N_LOCALE || 'en',
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
   messages: loadLocaleMessages(),
 };
 
-const i18n = new VueI18n(config);
+const virgin = new VueI18n(config);
+patchLocaleMessages(config, virgin);
 
-let locale = 'en';
-config.messages[locale]["X Numbers + Y Euronumbers"] =
-  ctx => {
-    return `${i18n.tc('match.Numbers', ctx.named('X'), locale)} + ${i18n.tc('match.Euronumbers', ctx.named('Y'), locale)}`;
-  };
-
-locale = 'de';
-config.messages[locale]["X Numbers + Y Euronumbers"] =
-  ctx => {
-    return `${i18n.tc('match.Numbers', ctx.named('X'), locale)} + ${i18n.tc('match.Euronumbers', ctx.named('Y'), locale)}`;
-  };
-
-locale = 'sv-SE';
-config.messages[locale]["X Numbers + Y Euronumbers"] =
-  ctx => {
-    return ctx.named('Y') > 0
-      ? `${ctx.named('X')} + ${ctx.named('Y')} ${i18n.t('match.Numbers', locale)}`
-      : `${ctx.named('X')} ${i18n.t('match.Numbers', locale)}`;
-  };
-
-export default new VueI18n(config);
+const patched = new VueI18n(config); 
+export default patched;
