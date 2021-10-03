@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img class="logo" alt="Vue logo" src="./assets/ll-logo-green-14c4a0ddaf8c5179.svg">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <ae-results></ae-results>
   </div>
@@ -37,6 +37,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 288px;
 }
 </style>
