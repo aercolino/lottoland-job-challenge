@@ -74,7 +74,7 @@ export default {
     },
     combinations() {
       return Object.values(tiersToMatches)
-        .map(([numbers, euroNumbers]) => `${this.$tc('match.Numbers', numbers)} + ${this.$tc('match.Euronumbers', euroNumbers)}`);
+        .map(([numbers, euroNumbers]) => this.$t('X Numbers + Y Euronumbers', { X: numbers, Y: euroNumbers }));
     }
   },
 };
