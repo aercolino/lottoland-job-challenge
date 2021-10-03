@@ -73,7 +73,7 @@ export default {
       return Object.keys(tiersToMatches);
     },
     combinations() {
-      return Object.values(tiersToMatches).map(([numbers, euroNumbers]) => `${numbers} Numbers + ${euroNumbers} Euronumbers`);
+      return Object.values(tiersToMatches).map(([numbers, euroNumbers]) => this.$t('X Numbers + Y Euronumbers', { X: numbers, Y: euroNumbers }));
     }
   },
 };

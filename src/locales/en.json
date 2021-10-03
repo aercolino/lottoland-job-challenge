@@ -1,3 +1,4 @@
 {
-  "message": "hello i18n !!"
+  "message": "hello i18n !!",
+  "X Numbers + Y Euronumbers": "{X} Numbers + {Y} Euronumbers"
 }
