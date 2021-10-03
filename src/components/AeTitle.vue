@@ -21,8 +21,7 @@ export default {
         minute: this.date.minute,
       };
       const germanDate = DateTime.fromObject(germanParts, { zone: 'Europe/Berlin' });
-      const locale = document.documentElement.lang || 'en-GB';
-      const localDate = germanDate.toLocal().setLocale(locale);
+      const localDate = germanDate.toLocal().setLocale(this.$i18n.locale);
       const result = localDate.toLocaleString(DateTime.DATE_HUGE);
       return result;
     },
